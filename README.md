@@ -9,7 +9,11 @@ modeling approaches are compared end-to-end:
 
 Both are scored with **RMSE** and the **NASA asymmetric scoring function**, which
 penalizes *late* predictions (predicting failure after it happens) more than
-*early* ones — because a late maintenance action can mean an in-flight failure.
+*early* ones - because a late maintenance action can mean an in-flight failure.
+
+## Streamlit Snapshots
+<img width="1915" height="825" alt="image" src="https://github.com/user-attachments/assets/fa995cc0-edb8-4cf3-a4b1-e7d1c781f645" />
+<img width="1660" height="617" alt="image" src="https://github.com/user-attachments/assets/41957926-c0d3-4af7-a662-58bb0dad53c8" />
 
 ---
 
