@@ -1,0 +1,43 @@
+{
+  "config": {
+    "fd": 1,
+    "window": 30,
+    "hidden": 64,
+    "num_layers": 2,
+    "rnn_type": "gru",
+    "seed": 42,
+    "n_train_units": 85,
+    "n_val_units": 15,
+    "n_test_units": 100
+  },
+  "models": {
+    "linear_regression": {
+      "n_samples": 100,
+      "rmse": 15.391618210014515,
+      "nasa_score": 3.48280544497537,
+      "mae": 12.49832550120842,
+      "bias": 0.01812284895441081
+    },
+    "random_forest": {
+      "n_samples": 100,
+      "rmse": 13.333995707953322,
+      "nasa_score": 2.793184308508606,
+      "mae": 9.998213283924686,
+      "bias": 1.8414665401129398
+    },
+    "xgboost": {
+      "n_samples": 100,
+      "rmse": 13.142652578171111,
+      "nasa_score": 2.6820156951736185,
+      "mae": 9.778431539535523,
+      "bias": 1.7320516872406007
+    },
+    "gru": {
+      "n_samples": 100,
+      "rmse": 13.906568570654645,
+      "nasa_score": 4.159030041224131,
+      "mae": 10.21350013256073,
+      "bias": 1.9935794496536254
+    }
+  }
+}

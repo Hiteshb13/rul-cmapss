@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (large/raw) — keep only a small sample under data/sample/
+data/raw/
+data/processed/*
+!data/processed/.gitkeep
+
+# Models / artifacts
+models/*.pt
+models/*.pkl
+models/*.joblib
+models/*.bin
+models/*.onnx
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,5 @@
+model,rmse,nasa_score,mae
+Linear Regression,15.39,3.48,12.5
+Random Forest,13.33,2.79,10.0
+XGBoost,13.14,2.68,9.78
+GRU,13.91,4.16,10.21
