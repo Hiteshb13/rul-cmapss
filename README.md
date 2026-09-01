@@ -1,4 +1,4 @@
-# Aircraft Engine Predictive Maintenance — Remaining Useful Life (RUL)
+# Aircraft Engine Predictive Maintenance - Remaining Useful Life (RUL)
 
 Predict the **Remaining Useful Life** of a turbofan aircraft engine from
 multivariate sensor time-series, using the NASA **C-MAPSS** dataset. Two
@@ -18,12 +18,12 @@ penalizes *late* predictions (predicting failure after it happens) more than
 Turbofan engines degrade over time under varying operating conditions. Given a
 run of 21 sensor channels (temperature, pressure, speed, etc.) plus 3
 operational settings, we want to estimate how many flight cycles remain before
-failure, so maintenance can be scheduled *before* an unplanned outage — and
+failure, so maintenance can be scheduled *before* an unplanned outage - and
 flagged the moment a pre-defined action threshold is crossed.
 
 ## Dataset
 
-**C-MAPSS (Commercial Modular Aero-Propulsion System Simulation)** — NASA
+**C-MAPSS (Commercial Modular Aero-Propulsion System Simulation)** - NASA
 Prognostics Center of Excellence Data Repository.
 
 - **Citation**: A. Saxena and K. Goebel (2008). *"Turbofan Engine Degradation
@@ -102,7 +102,7 @@ Models were tuned on an 85/15 unit-level train/val split (seed = 42).
 **Takeaways**
 
 - Gradient-boosted trees on engineered features are the best performer, and
-  notably better on the *NASA score* than the GRU (2.68 vs 4.16) — they make
+  notably better on the *NASA score* than the GRU (2.68 vs 4.16) - they make
   fewer large **late** predictions.
 - A vanilla GRU on raw sequences is competitive on RMSE (13.91) but tends to
   over-estimate RUL more often, which the asymmetric score punishes.
